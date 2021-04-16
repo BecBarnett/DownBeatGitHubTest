@@ -44,5 +44,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val becsLocation = LatLng(-28.0, 153.4)
         mMap.addMarker(MarkerOptions().position(becsLocation).title("Rebecca Lives Here"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(becsLocation))
+
+        //Add marker in Adelaide and move the camera
+        val gregsLocation = LatLng(-34.8, 138.6)
+        mMap.addMarker(MarkerOptions().position(gregsLocation).title("Greg Lives Here"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(gregsLocation))
     }
 }
